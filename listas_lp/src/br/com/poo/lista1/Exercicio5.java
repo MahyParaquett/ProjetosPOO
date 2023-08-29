@@ -32,6 +32,8 @@ public class Exercicio5 {
 		case 2:
 			System.out.println("O resultado da expressão 2 é "+ b);
 			break;
+		default:
+			System.out.println("Ops! parece que voce digitou um numero inválido. Tente novamente");
 		}
 		
 	}
