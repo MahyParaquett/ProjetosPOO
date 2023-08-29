@@ -1,3 +1,9 @@
+/* Lista 1- atividade 1
+ *  Etapas:
+ *  1- perguntar o nome
+ *  2-perguntar o sobrenome
+ *  3-juntar nome e sobrenome em uma frase
+ */
 package br.com.poo.lista1;
 
 //lista de bibliotecas
