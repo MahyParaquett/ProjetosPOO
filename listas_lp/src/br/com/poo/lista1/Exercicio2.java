@@ -18,6 +18,7 @@ public class Exercicio2 {
 	public static void main(String[] args) {
 		int suaIdade;
 		int soma=0;
+		int somaTotal;
 		int idades[] = new int[5];
 		
 		Scanner sc = new Scanner(System.in);
@@ -33,8 +34,8 @@ public class Exercicio2 {
 		sc.close();
 		
 		limpa();
-		
-		System.out.println("A soma dessas idades é: "+ (soma+suaIdade));
+		somaTotal = soma+suaIdade;
+		System.out.println("A soma dessas idades é: "+ somaTotal);
 	}
 
 	public static void limpa() {
