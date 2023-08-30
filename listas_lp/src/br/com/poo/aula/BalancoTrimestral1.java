@@ -5,9 +5,9 @@ public class BalancoTrimestral1 {
 	public static void main(String[] args) {
 		Integer gastosJaneiro = 15000;
 		Integer gastosFevereiro = 23000;
-		Integer gastosMarço = 17000;
+		Integer gastosMarco = 17000;
 				
-		Integer gastosTrimestre= gastosJaneiro+gastosFevereiro+gastosMarço;
+		Integer gastosTrimestre= gastosJaneiro+gastosFevereiro+gastosMarco;
 				
 		System.out.println("Os gastos do trimestre foram: "+ gastosTrimestre);
 	}

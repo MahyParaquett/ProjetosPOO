@@ -10,10 +10,8 @@ public class TestCastings1 {
 		
 		System.out.println("a soma das duas variáveis: "+ x +" e "+ y+ " é igual a "+ soma);
 		
-		double x1 = x;
-		double y1 = y;
-		
-		s = (x1/y1);
+				
+		s =((double)x/y);
 		
 		System.out.println("a divisão das duas variáveis: "+ x +" e "+ y+ " é igual a "+ s);
 		
