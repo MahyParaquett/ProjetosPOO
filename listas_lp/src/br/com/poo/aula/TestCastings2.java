@@ -3,8 +3,8 @@ package br.com.poo.aula;
 public class TestCastings2 {
 
 	public static void main(String[] args) {
-		char A=1;
-		char Z=2;
+		char A = 'A';
+		char Z = 'Z';
 		int soma;
 		
 		soma = A+Z;
@@ -12,5 +12,4 @@ public class TestCastings2 {
 		System.out.println("a soma das duas variáveis: "+ A +" e "+ Z+ " é igual a "+ soma);
 
 	}
-
 }
