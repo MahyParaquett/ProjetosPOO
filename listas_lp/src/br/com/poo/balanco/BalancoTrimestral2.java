@@ -1,4 +1,4 @@
-package br.com.poo.aula;
+package br.com.poo.balanco;
 
 public class BalancoTrimestral2 {
 

@@ -1,4 +1,4 @@
-package br.com.poo.aula;
+package br.com.poo.balanco;
 
 import java.math.BigDecimal;
 
