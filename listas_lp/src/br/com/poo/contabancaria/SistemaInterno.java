@@ -9,7 +9,11 @@ public class SistemaInterno {
 		minhaConta.titular = "Pedro";
 		minhaConta.saldo = 1000.0;
 		
+		Conta minhaconta2 = new Conta(1,"Mahyara",10000);
+		
 		System.out.println(minhaConta);
+		
+		System.out.println(minhaconta2);
 	}
 	
 }

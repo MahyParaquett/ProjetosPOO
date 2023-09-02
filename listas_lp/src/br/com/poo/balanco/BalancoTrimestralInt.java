@@ -29,7 +29,7 @@ public class BalancoTrimestralInt {
 	}
 	public int soma(int janeiro, int fevereiro, int marco) {
 		int somaTri = janeiro + fevereiro + marco;
-		System.out.printf("o gasto do primeiro bimestre é de R$ %d\n", somaTri);
+		System.out.printf("o gasto do primeiro trimestre é de R$ %d\n", somaTri);
 		return somaTri;
 	}
 	

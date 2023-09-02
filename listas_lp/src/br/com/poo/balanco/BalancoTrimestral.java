@@ -21,7 +21,7 @@ public class BalancoTrimestral {
 		//instancia do balanco Double
 		BalancoTrimestralDouble btd = new BalancoTrimestralDouble();
 		btd.soma();
-		btd.soma(258);
+		btd.soma(258.00);
 		btd.soma(5000, 3000 );
 		btd.soma(0, 0, 0);
 		
@@ -31,6 +31,14 @@ public class BalancoTrimestral {
 		btg.soma(new BigDecimal(100));// esse tipo de syntax é a mesma coisa que btg.soma(100)//--> nesse caso estou atribuindo 100 a variavel de janeiro 
 		btg.soma(new BigDecimal(100), new BigDecimal(50));
 		btg.soma(new BigDecimal(100),new BigDecimal(50), new BigDecimal(150));
-	}
+	
 
+		//intanciando meu teste
+		MelhorarLogger mlr = new MelhorarLogger();
+		mlr.soma();
+		mlr.soma(100);
+		mlr.soma(100, 200);
+		mlr.soma(100, 200, 300);
+		
+	}		
 }
