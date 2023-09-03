@@ -29,19 +29,19 @@ public class MelhorarLogger {
 			}
 			
 			public int soma(int janeiro) {
-				logger.log(Level.INFO,"O balanço trimestral é de R$ {0}", janeiro);
+				logger.log(Level.INFO,"O gasto de Janeiro é de R$ {0}", janeiro);
 				return janeiro;
 			}
 			
 			public int soma(int janeiro, int fevereiro) {
 				int somaBi = janeiro + fevereiro;
-				logger.log(Level.INFO,"O balanço trimestral é de R$ {0}", somaBi);
+				logger.log(Level.INFO,"O gasto do primeiro bimestre é de R$ {0}", somaBi);
 				return somaBi;
 			}
 			
 			public int soma(int janeiro, int fevereiro, int marco) {
 				int somaTri = janeiro + fevereiro + marco;
-				logger.log(Level.INFO,"O balanço trimestral é de R$ {0}", somaTri);
+				logger.log(Level.INFO,"O gasto do primeiro trimestre é de R$ {0}", somaTri);
 				return somaTri;
 			}
 	}

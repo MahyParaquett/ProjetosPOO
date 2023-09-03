@@ -2,14 +2,14 @@ package br.com.poo.balanco;
 
 import java.math.BigDecimal;
 
+
 public class BalancoTrimestral {
 	//Logger definido fora do método
 	// private static Logger logger = Logger.getLogger(BalancoTrimestral.class.getName());
 
 	public static void main(String[] args) {
 		//Logger definido dentro do metodo
-		//Logger logger = Logger.getLogger(BalancoTrimestral.class.getName());
-		
+		//private static Logger logger = Logger.getLogger(BalancoTrimestral.class.getName());		
 		
 		//instancia do balanco Integer
 		BalancoTrimestralInt bti = new BalancoTrimestralInt();
@@ -40,5 +40,13 @@ public class BalancoTrimestral {
 		mlr.soma(100, 200);
 		mlr.soma(100, 200, 300);
 		
-	}		
+		//ParteII
+		ParteII pt2 = new ParteII();
+		pt2.gastos(15000);
+		pt2.gastos(23000.00, 17000.00);
+		pt2.gastos(37492.98);
+		pt2.gastos(52627.99);
+		pt2.gastos(100500.56, 95600);
+	}
+	
 }
