@@ -23,9 +23,9 @@
 hs_err_pid*
 replay_pid*
 
-/listas_lp/.classpath
-/listas_lp/.project
-/listas_lp/.gitignore
-/listas_lp/bin
-/listas_lp/.settings
+*.classpath
+*.project
+*.gitignore
+*bin
+*.settings
 *.project
