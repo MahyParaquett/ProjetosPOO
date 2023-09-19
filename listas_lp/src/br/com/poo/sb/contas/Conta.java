@@ -1,34 +1,43 @@
 package br.com.poo.sb.contas;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Conta {
 
-	private int numero;
-	private String titular;
-	private double saldo;
+	private String tipoConta;
+	private String numConta;
+	private String cpfTitular;
+	private Double saldo;
 	
+	//criar map
+	public static Map<String, Conta> mapaContas = new HashMap<>();
+
+	//instanciando o log
 	private static Logger logger = Logger.getLogger(Conta.class.getName());
-	
+
+	//contrutor default
 	public Conta() {
 	}
 
-	public Conta(int numero, String titular, double saldo) {
-		this.numero = numero;
-		this.titular = titular;
+	public Conta(String tipoConta, String numConta, String cpfTitular, Double saldo) {
+		this.tipoConta = tipoConta;
+		this.numConta = numConta;
+		this.cpfTitular = cpfTitular;
 		this.saldo = saldo;
 	}
 
 //	@Override
 //	public String toString() {
-//		return numero + " " + titular + " " + saldo;
+//		return numConta + " " + titular + " " + saldo;
 //	}
-	
-	public boolean sacar(double valor) {
+
+	public boolean sacar(Double valor) {
 		if (this.saldo < valor) {
 			return false;
-		} else if(valor <= 0.0) {
+		} else if (valor <= 0.0) {
 			logger.log(Level.INFO, "Valor inválido");
 			return false;
 		} else {
@@ -36,20 +45,26 @@ public class Conta {
 			return true;
 		}
 	}
-	
-	public int getNumero() {
-		return numero;
+
+	public String getNumConta() {
+		return numConta;
 	}
-	public String getTitular() {
-		return titular;
+
+	public String getCpfTitular() {
+		return cpfTitular;
 	}
-	public double getSaldo() {
+
+	public Double getSaldo() {
 		return saldo;
+	}
+
+	public String getTipoConta() {
+		return tipoConta;
 	}
 
 	@Override
 	public String toString() {
-		return "Conta [numero=" + numero + ", titular=" + titular + ", saldo=" + saldo + "]";
+		return "Conta [numConta=" + numConta + ", titular=" + cpfTitular + ", saldo=" + saldo + "]\n";
 	}
-	
+
 }

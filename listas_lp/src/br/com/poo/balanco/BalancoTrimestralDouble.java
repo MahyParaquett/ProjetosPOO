@@ -4,6 +4,8 @@ import java.text.DecimalFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import br.com.poo.util.Util;
+
 public class BalancoTrimestralDouble {
 
 	private Double gastosJaneiro = 15000.00;
@@ -11,16 +13,18 @@ public class BalancoTrimestralDouble {
 	private Double gastosMarco = 17000.00;
 
 	private Double somaTotal = gastosJaneiro + gastosFevereiro + gastosMarco;
+	private DecimalFormat df = new DecimalFormat("#,###.##"); //cpf ###,###,###-##
 	
 	static final String TXT = "O balanço trimestral é de R$: ";
-	DecimalFormat df = new DecimalFormat("#,###.##"); //cpf ###,###,###-##
 	
 	private static Logger logger = Logger.getLogger(BalancoTrimestralDouble.class.getName());
 
 	public double soma() {
+					
 		//tirar do console a data e hora do logger
 		Logger logger2 = Util.setupLogger();
 		logger2.log(Level.INFO, () -> TXT + df.format(somaTotal));
+		
 		// ()-> Classe anonima/lambda
 		logger.log(Level.INFO,()-> TXT + df.format(somaTotal));
 		return somaTotal;
