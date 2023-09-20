@@ -3,8 +3,6 @@ package br.com.poo.TrabIndividual;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import br.com.poo.TrabIndividual.util.Util;
 

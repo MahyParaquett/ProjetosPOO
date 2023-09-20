@@ -7,14 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import br.com.poo.TrabIndividual.Delegacia;
 import br.com.poo.TrabIndividual.Denuncia;
-import br.com.poo.TrabIndividual.util.Util;
 
 public class LeituraEscrita {
 	// Contantes
