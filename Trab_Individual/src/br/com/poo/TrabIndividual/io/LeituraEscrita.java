@@ -68,7 +68,7 @@ public class LeituraEscrita {
 	}
 
 //ESCRITA
-	public static void relatorio(String delegado) throws IOException {
+	public static void relatorioDenunciaxDelegado(String delegado) throws IOException {
 		
 		String path = "Relatorio_DenunciaxDelegado";
 		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + path + EXTENSAO));
@@ -87,7 +87,24 @@ public class LeituraEscrita {
 		buffWrite.close();
 
 	}
+public static void relatorioCasoCasa() throws IOException {
+		
+		String path = "Relatorio_CasoCasa";
+		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + path + EXTENSAO));
+		
+		
+		buffWrite.append("************* RELATORIO DE CASOS EM CASA *************" + "\n");
+		buffWrite.append("casos:" );
+		buffWrite.append(Denuncia.classificador());
 
+		LocalDateTime dataHora = LocalDateTime.now();
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		buffWrite.append("\nData da operação: " + dtf.format(dataHora) + "\n");
+		buffWrite.append("************* FIM RELATORIO DE CASOS EM CASA *************" + "\n");
+
+		buffWrite.close();
+
+	}
 	
 		
 	}

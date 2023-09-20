@@ -67,19 +67,17 @@ public class Delegacia {
 
 	// MÉTODO PARA LOCALIZAR
 	public static String localizar(String delegado) {
-		Logger logger = Util.setupLogger();
-		
 		ArrayList<String> denuncias = new ArrayList<>();
 		
 		for (Map.Entry<Integer, Delegacia> delegacia : Delegacia.mapaDelegacia.entrySet()) {
 			if (delegacia.getValue().getDelegado().equalsIgnoreCase(delegado)) {
 				Denuncia dn = Denuncia.mapaDenuncia.get(delegacia.getValue().getNumDelegacia());
-				logger.log(Level.INFO, () -> " " + dn);
-				Util.customizer();
+				
 				denuncias.add(dn.toString());
 			}	
 			
 		}
+		Util.customizer();		
 		return arrayToString(denuncias,"\n\n");
 	}
 
